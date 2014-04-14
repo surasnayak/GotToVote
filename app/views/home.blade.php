@@ -2,15 +2,16 @@
 
 @section('top-nav')
 	<li class="active"><a href="/">Home</a></li>
-	<li><a href="/verify">Verify</a></li>
+	<li><a href="/verify"><b>VERIFY</b></a></li>
 	<li><a href="/about">About</a></li>
 @stop
 
 @section('content')
     <div class="jumbotron">
-		<h1>Register as a Voter Today!</h1>
-		<p class="lead">Voter registration for the Kenya 2013 Elections has begun. Find a voter registration centre and register to vote.</p>
-		<p><a class="btn btn-lg btn-success" href="#" id="findlink" onclick="$('#find').scrollTop();">Find a Registration Centre</a></p>
+		<h1 class="text-info">Confirm Your Registration Today!</h1>
+		<p class="lead">Voter registration confirmation for the Malawi 2014 Elections has begun. Confirm your registration information here.</p>
+		<p><a class="btn btn-lg btn-info" href="/verify" >Confirm Registration</a></p>
+		<p class="text-muted"><small>Powered by Malawi Electoral Commission</small></p>
 	</div>
 
 	<div class="row marketing">
@@ -21,12 +22,12 @@
 			<h4>Who qualifies to register as a voter?</h4>
 			<p>In order to qualify as a voter, one must:</p>
 			<p><ul>
-				<li><p>Be a Kenyan citizen</p></li>
+				<li><p>Be a Malawi citizen</p></li>
 				<li><p>Be 18 years old and above</p></li>
 			</ul></p>
 			
 			<h4>Can a person transfer as a voter to another registration centre or constituency?</h4>
-			<p>YES! A person may transfer as a voter to another registration centre within the constituency or outside the constituency. The person is required to present himself/ herself to the particular registration centre or constituency if he/she meets the requirements.</p>
+			<p>No. A person cannot transfer as a voter to another registration centre within the constituency or outside the constituency.</p>
 			
 		</div>
 		<div class="col-md-6">
@@ -42,133 +43,28 @@
 	</div>
 	
 	<div class="clearfix"></div>
-    <a name="find" id="find"></a>
-    <hr />
-    
-    
-    <div id="find-reg" class="marketing text-center">
-	    <h2>Find A Registration Centre!</h2>
-	    
-	    <div class="row marketing" >
-		    <div class="col-md-4">
-			    <p class="lead">County</p>
-			    <select id="county_select" class="form-control">
-				    <option value="0">Select a County</option>
-				    <option value="30">Baringo</option>
-				    <option value="36">Bomet</option>
-				    <option value="39">Bungoma</option>
-				    <option value="40">Busia</option>
-				    <option value="28">Elgeyo/Marakwet</option>
-				    <option value="14">Embu</option>
-				    <option value="7">Garissa</option>
-				    <option value="43">Homa Bay</option>
-				    <option value="11">Isiolo</option>
-				    <option value="34">Kajiado</option>
-				    <option value="37">Kakamega</option>
-				    <option value="35">Kericho</option>
-				    <option value="22">Kiambu</option>
-				    <option value="3">Kilifi</option>
-				    <option value="20">Kirinyaga</option>
-				    <option value="45">Kisii</option>
-				    <option value="42">Kisumu</option>
-				    <option value="15">Kitui</option>
-				    <option value="2">Kwale</option>
-				    <option value="31">Laikipia</option>
-				    <option value="5">Lamu</option>
-				    <option value="16">Machakos</option>
-				    <option value="17">Makueni</option>
-				    <option value="9">Mandera</option>
-				    <option value="10">Marsabit</option>
-				    <option value="12">Meru</option>
-				    <option value="44">Migori</option>
-				    <option value="1">Mombasa</option>
-				    <option value="21">Murang'a</option>
-				    <option value="47">Nairobi</option>
-				    <option value="32">Nakuru</option>
-				    <option value="29">Nandi</option>
-				    <option value="33">Narok</option>
-				    <option value="46">Nyamira</option>
-				    <option value="18">Nyandarua</option>
-				    <option value="19">Nyeri</option>
-				    <option value="25">Samburu</option>
-				    <option value="41">Siaya</option>
-				    <option value="6">Taita Taveta</option>
-				    <option value="4">Tana River</option>
-				    <option value="13">Tharaka - Nithi</option>
-				    <option value="26">Trans Nzoia</option>
-				    <option value="23">Turkana</option>
-				    <option value="27">Uasin Gishu</option>
-				    <option value="38">Vihiga</option>
-				    <option value="8">Wajir</option>
-				    <option value="24">West Pokot</option>
-			    </select>
-		    </div>
-		    <div class="col-md-4">
-			    <p class="lead">Constituency</p>
-			    <select id="const_select" class="form-control">
-			    	<option value="0">- Select a County First -</option>
-			    </select>
-		    </div>
-		    <div class="col-md-4">
-			    <p class="lead">Ward</p>
-			    <select id="ward_select" class="form-control">
-			    	<option value="0">- Select a County First -</option>
-			    </select>
-		    </div>
-	    </div>
-	    
-	    <div id="found-reg" style="display: none;">
-		    <table class="table table-hover" style="margin-bottom: 0;">
-			    <thead><tr><td>
-			    	<h4>Registration Centres in <span id="header-name"> County</span></h4>
-			    </td></tr></thead>
-			    <tbody id="reg-centres">
-				    <tr><td>
-					    <p><img src="img/spinner.gif" alt="" /> Finding registration centres...</p>
-				    </td></tr>
-			    </tbody>
-		    </table>
-	    </div> <!-- /#found-reg -->
-	    
-    </div> <!-- /#find-reg -->
-    
-    <hr />
-    
-    <div class="row marketing">
-    	<div class="col-md-6">
-    		<h3>About</h3>
-    		<p>GotToVote! is designed to help citizens get to the voting booth prepared and informed.</p>
-    		<p><a href="/about" class="btn btn-xs btn-default">Read more...</a></p>
-    		<h3>Get Social</h3>
-    		<p class="social-icons">
-    			<a href="javascript:void(0);" name="Share_TW" title="Share on Twitter | GotToVote! Ke"
-    			onClick='window.open("http://twitter.com/home?status=Register%20as%20a%20voter%20today!%20Find%20a%20registration%20center%20on%20http://gottovote.code4kenya.org%20%23GotToVote%20by%20@Code4Kenya","GotToVote","width=550,height=270");'>
-    				<span class="fa-stack fa-2x">
-    					<i class="fa fa-square-o fa-stack-2x"></i>
-    					<i class="fa fa-twitter fa-stack-1x"></i>
-    				</span>
-    			</a>
-    			<a href="javascript:void(0);" name="Share_FB" title="Share on FB | GotToVote! Ke"
-    			onClick='window.open("http://www.facebook.com/sharer.php?u=http%3A%2F%2Fgottovote.code4kenya.org%2F&t=Register+as+a+voter+today!+Find+a+registration+center+on+Got+To+Vote.","GotToVote","width=550,height=270");'>
-    				<span class="fa-stack fa-2x">
-    					<i class="fa fa-square-o fa-stack-2x"></i>
-    					<i class="fa fa-facebook fa-stack-1x"></i>
-    				</span>
-    			</a>
-    			<a href="https://plus.google.com/share?url=gottovote.code4kenya.org" onclick="javascript:window.open(this.href,
-    			'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;">
-    				<span class="fa-stack fa-2x">
-    					<i class="fa fa-square-o fa-stack-2x"></i>
-    					<i class="fa fa-google-plus fa-stack-1x"></i>
-    				</span>
-    			</a>
-    		</p>
-    	</div>
-    	<div class="col-md-6">
-    		<a class="twitter-timeline" href="https://twitter.com/search?q=%23GotToVote" data-widget-id="443862671192903680">Tweets about "#GotToVote"</a>
-    		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-    	</div>
-    </div>
-    
-   
+@stop
+
+@section('footer-top')
+	<div class="container">
+		<img src="/assets/img/people5.png" alt="" style="width: 100%;"/>
+	</div>	
+	<div class="footer bg-info">
+		<div class="container">
+			<div class="row marketing">
+				<div class="col-md-6">
+					<h2 class="">About</h2>
+					<p class="lead">Enabling citizens to get to the ballot box informed and ready.</p>
+					<p>GotToVote started off as a simple experiment to make data otherwise locked in government, useful to the general public.</p>
+					<p>MalawiVote builds on this same principle and is proudly brought to you by <a href="http://mec.org.mw/" target="_blank">Malawi Electoral Commission</a>, <a href="http://www.codeforafrica.org/" target="_blank">Code for Africa</a>, <a href="http://wbi.worldbank.org/" target="_blank">World Bank</a>, <a href="http://africanmediainitiative.org">African Media Initiative</a>, <a href="http://hivos.org" target="_blank">Hivos</a>, <a href="http://www.osisa.org/" target="_blank">Open Society Initiative for Southern Africa</a> and <a href="http://www.smagmedia.net" target="_blank">Smag Media</a>.</p>
+					<br />
+					<p><a href="/about" class="btn btn-default">Read More...</a></p>
+				</div>
+				<div class="col-md-6">
+					<a class="twitter-timeline" href="https://twitter.com/search?q=%23GotToVote" data-widget-id="443862671192903680">Tweets about "#GotToVote"</a>
+					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+				</div>
+			</div> <!-- /.row .marketing -->
+		</div> <!-- /.container -->
+	</div> <!-- /.footer -->
 @stop
