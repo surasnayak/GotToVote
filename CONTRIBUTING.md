@@ -1,6 +1,6 @@
 # Contributing to GotToVote
 
-♥ [HTML5 Boilerplate](http://html5boilerplate.com) and want to get involved?
+♥ [GotToVote](http://gottovote.cc) and want to get involved?
 Thanks! There are plenty of ways you can help!
 
 
@@ -9,7 +9,7 @@ Thanks! There are plenty of ways you can help!
 A bug is a _demonstrable problem_ that is caused by the code in the
 repository.
 
-Please read the following guidelines before you [report an issue](https://github.com/h5bp/html5-boilerplate/issues/):
+Please read the following guidelines before you [report an issue](https://github.com/CodeForAfrica/GotToVote/issues/):
 
 1. **Use the GitHub issue search** &mdash; check if the issue has already been
    reported. If it has been, please comment on the existing issue.
@@ -52,7 +52,7 @@ details will help people to assess and fix any potential bugs.
 A good bug report shouldn't leave people needing to chase you up to get further
 information that is required to assess or fix the bug.
 
-**[File a bug report](https://github.com/h5bp/html5-boilerplate/issues/)**
+**[File a bug report](https://github.com/CodeForAfrica/GotToVote/issues/)**
 
 
 ## Pull requests
@@ -70,10 +70,10 @@ project:
 1. [Fork](http://help.github.com/fork-a-repo/) the project.
 
 2. Clone your fork (`git clone
-   https://github.com/<your-username>/html5-boilerplate.git`).
+   https://github.com/<your-username>/GotToVote.git`).
 
 3. Add an `upstream` remote (`git remote add upstream
-   https://github.com/h5bp/html5-boilerplate.git`).
+   https://github.com/CodeForAfrica/GotToVote.git`).
 
 4. Get the latest changes from upstream (e.g. `git pull upstream
    <dev-branch>`).
@@ -99,32 +99,3 @@ project:
 
 10. [Open a Pull Request](http://help.github.com/send-pull-requests/) with a
     clear title and description. Please mention which browsers you tested in.
-=======
-# Contributing to GotToVote
-
-Looking to contribute something to GotToVote? **Here's how you can help.**
-
-Please take a moment to review this document in order to make the contribution
-process easy and effective for everyone involved.
-
-Following these guidelines helps to communicate that you respect the time of
-the developers managing and developing this open source project. In return,
-they should reciprocate that respect in addressing your issue or assessing
-patches and features.
-
-
-## Using the issue tracker
-
-The [issue tracker](https://github.com/CodeForAfrica/GotToVote/issues) is
-the preferred channel for [bug reports](#bug-reports), [features requests](#feature-requests)
-and [submitting pull requests](#pull-requests), but please respect the following
-restrictions:
-
-* Please **do not** use the issue tracker for personal support requests. [Stack Overflow](http://stackoverflow.com/) tag or [IRC](https://github.com/CodeForAfrica/GotToVote/blob/master/README.md#community) are better places to get help.
-
-* Please **do not** derail or troll issues. Keep the discussion on topic and
-  respect the opinions of others.
-
-* Please **do not** open issues or pull requests regarding the code in
-  [`Normalize`](https://github.com/necolas/normalize.css) (open them in
-  their respective repositories).
