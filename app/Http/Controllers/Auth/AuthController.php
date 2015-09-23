@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Http\Controllers\Auth;
+namespace GotToVote\Http\Controllers\Auth;
 
-use App\User;
+use GotToVote\User;
 use Validator;
-use App\Http\Controllers\Controller;
+use GotToVote\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\ThrottlesLogins;
 use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;
 

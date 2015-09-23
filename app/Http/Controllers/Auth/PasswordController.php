@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Http\Controllers\Auth;
+namespace GotToVote\Http\Controllers\Auth;
 
-use App\Http\Controllers\Controller;
+use GotToVote\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\ResetsPasswords;
 
 class PasswordController extends Controller

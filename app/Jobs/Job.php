@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Jobs;
+namespace GotToVote\Jobs;
 
 use Illuminate\Bus\Queueable;
 

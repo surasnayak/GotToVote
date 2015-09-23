@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Events;
+namespace GotToVote\Events;
 
 abstract class Event
 {
