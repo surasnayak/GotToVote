@@ -20,12 +20,20 @@
 <![endif]-->
 
 <!-- Add your site or application content here -->
-<p>Hello world! This is HTML5 Boilerplate.</p>
+
+@yield('header')
+
+@yield('sidebar')
+
+@yield('content')
+
+@yield('footer')
+
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
-<script src="js/plugins.js"></script>
-<script src="js/main.js"></script>
+<script>window.jQuery || document.write('<script src="/js/jquery.min.js"><\/script>')</script>
+
+@yield('scripts')
 
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 <script>
