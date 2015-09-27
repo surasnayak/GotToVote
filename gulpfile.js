@@ -15,7 +15,8 @@ elixir(function(mix) {
     mix .sass('app.scss')
         .copy('node_modules/bootstrap/dist/js/bootstrap.min.js', 'public/js/bootstrap.min.js')
         .copy('node_modules/bootstrap/dist/fonts', 'public/fonts')
-        .copy('node_modules/jquery/dist/jquery.min.js', 'public/js/jquery.min.js')
-        .copy('node_modules/jquery/dist/jquery.min.map', 'public/js/jquery.min.map')
+        .copy('node_modules/jquery/dist', 'public/js')
+        .copy('node_modules/font-awesome/css', 'public/css')
+        .copy('node_modules/font-awesome/fonts', 'public/fonts')
         .version('css/app.css');
 });
