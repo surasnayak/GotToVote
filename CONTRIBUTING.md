@@ -1,6 +1,7 @@
 # Contributing to HTML5 Boilerplate
 
-♥ [HTML5 Boilerplate](http://html5boilerplate.com) and want to get involved?
+♥ [HTML5 Boilerplate](http://html5boilerplate.com) 
+Want to get involved? 
 Thanks! There are plenty of ways you can help!
 
 
